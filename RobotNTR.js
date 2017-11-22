@@ -52,7 +52,21 @@ client.on('message', message => {
               color: 0x008080,
               fields: [
                   {
-                      name: "Pong!",
+                      name: "Haha!",
+                      value: "Lol funny! Test 1019181",
+                      inline: true,
+                  },
+              ],
+          }
+      })
+  }
+  else if (message.content === './urmum') {
+      message.channel.send({
+          embed: {
+              color: 0x008080,
+              fields: [
+                  {
+                      name: "Ping!",
                       value: "Ping Time: " + new Date().getTime() - message.createdTimestamp + " ms",
                       inline: true,
                   },
