@@ -66,7 +66,7 @@ client.on('message', message => {
               color: 0x008080,
               fields: [
                   {
-                      name: "Ping!",
+                      name: "u mom lol niggaaaniggaaaa!",
                       value: "Ping Time: " + new Date().getTime() - message.createdTimestamp + " ms",
                       inline: true,
                   },
