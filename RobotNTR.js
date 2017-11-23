@@ -151,6 +151,30 @@ client.on('message', message => {
                       name: "Legal",
                       value: "RobotNTR runs on Node.JS, and uses Discord.JS to communicate with Discord. RobotNTR is licensed with the Apache 2.0 License.",
                       inline: true,
+		  },
+              ],
+	  }
+      })
+  }
+  else if (message.content === './test') {
+      message.channel.send({
+          embed: {
+              color: 0x008080,
+              title: "Test lol",
+              thumbnail: {
+		  url:
+		  "https://cdn.discordapp.com/attachments/382331380656242702/382641035735597076/20171121_141844.png",
+              },
+              fields: {
+		  {
+		      name: "Here is the test",
+		      value: "aoaossnsnsjwi",
+		      inline: true,
+		  },
+		  {
+		      name: "Here is more of the test",
+		      value: "more shit lol",
+		      inline: true,
                   }
               ],
           }
@@ -202,6 +226,11 @@ client.on('message', message => {
 		      value: "So offensive that Mario's stomach ulcer practically explodes and he is unable to ask Luigi to stop being so fucking racist.",
 		      inline: true,
 		  },
+		  {
+	              name: "./test",
+		      value: "tesssttttttt.",
+		      inline: true,
+                  },
 		  {
 		      name: "./online, ./idle",
 		      value: "Changes the bot's status. One sets it to Online, the other to Idle.",
